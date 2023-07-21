@@ -15,7 +15,8 @@ struct QuestionCardView: View {
                 RoundedRectangle(cornerRadius: getCardWidth(by: geo)/10)
                     .fill(.white)
                 Text("\(question.display) = \(input.value)")
-                    .font(.largeTitle)
+//                    .font(.largeTitle)
+                .font(Font.system(size: min(50, getCardWidth(by: geo)/5)))
                     .padding()
                     .displayInSingleLine()
             }

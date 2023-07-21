@@ -30,7 +30,7 @@ struct StackOfCardsView: View {
         (geo.size.width > geo.size.height ? geo.size.height : geo.size.width) / 2
     }
     func numOfCardOnScreen(by geo: GeometryProxy) -> Int {
-        return Int(geo.size.height / 2 - getCardHeight(by: geo) / 2 / (getCardHeight(by: geo) / 6)) + 1
+        return Int((geo.size.height / 2 - getCardHeight(by: geo) / 2) / (getCardHeight(by: geo) / 6)) + 1
     }
 }
 

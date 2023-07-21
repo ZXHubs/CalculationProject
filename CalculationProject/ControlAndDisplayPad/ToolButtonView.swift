@@ -10,6 +10,7 @@ import SwiftUI
 struct ToolButtonView: View {
     let btnName: String
     let actionBlock: ()->Void
+    var beingSelected = false
     
     var body: some View {
         GeometryReader { geo in
@@ -18,9 +19,9 @@ struct ToolButtonView: View {
                 Image(systemName: btnName)
                     .resizable()
                     .scaledToFit()
-                    .foregroundColor(.black)
+                    .foregroundColor(beingSelected ? .white : .black)
                     .padding(min(geo.size.width, geo.size.height)/20)
-                    .background(.gray)
+                    .background(beingSelected ? .blue : .gray)
                     .clipShape(Circle())
                     .padding(min(geo.size.width, geo.size.height)/20)
             })

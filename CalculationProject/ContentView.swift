@@ -15,20 +15,24 @@ struct ContentView: View {
     
     var body: some View {
         GeometryReader {geo in
-            VStack {
-                ControlAndDisplayPadView()
-                    .frame(width: geo.size.width, height: geo.size.width > geo.size.height ? geo.size.height / 4 : geo.size.width / 5, alignment: .center)
-                CardStackAndInputPadView()
-                //            Spacer()
-                //            SignalDisplayPad(width: 200)
-                //            Text("点击按钮\(clickCounter)次")
-                //            Button("添加一张卡牌", action:btnAction)
-                //            Button("提交") {
-                //                questionLib.commitQuestion(input: input)
-                //            }
-                //            Button("设置") {
-                //                showSettingPad = true
-                //            }
+            ZStack {
+                BackgroundView()
+                VStack {
+                    ControlAndDisplayPadView()
+                        .frame(width: geo.size.width, height: geo.size.width > geo.size.height ? geo.size.height / 4 : geo.size.width / 5, alignment: .center)
+                    AnswerAndDraftPadView(isPortrait: geo.size.width < geo.size.height)
+//                    CardStackAndInputPadView()
+                    //            Spacer()
+                    //            SignalDisplayPad(width: 200)
+                    //            Text("点击按钮\(clickCounter)次")
+                    //            Button("添加一张卡牌", action:btnAction)
+                    //            Button("提交") {
+                    //                questionLib.commitQuestion(input: input)
+                    //            }
+                    //            Button("设置") {
+                    //                showSettingPad = true
+                    //            }
+                }
             }
         }
         .environmentObject(questionLib)

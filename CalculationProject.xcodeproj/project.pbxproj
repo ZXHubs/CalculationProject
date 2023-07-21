@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3178FC0D2A6A63F20006D5AB /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178FC0C2A6A63F20006D5AB /* BackgroundView.swift */; };
+		3178FC0F2A6A66BF0006D5AB /* DraftPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178FC0E2A6A66BF0006D5AB /* DraftPadView.swift */; };
+		3178FC112A6A73380006D5AB /* DraftToolPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178FC102A6A73380006D5AB /* DraftToolPad.swift */; };
+		3178FC142A6A7CB80006D5AB /* AnswerAndDraftPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178FC132A6A7CB80006D5AB /* AnswerAndDraftPadView.swift */; };
 		31B982E32A5FB41A003DC8E3 /* CalculationProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B982E22A5FB41A003DC8E3 /* CalculationProjectApp.swift */; };
 		31B982E52A5FB41A003DC8E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B982E42A5FB41A003DC8E3 /* ContentView.swift */; };
 		31B982E72A5FB41C003DC8E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B982E62A5FB41C003DC8E3 /* Assets.xcassets */; };
@@ -35,6 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3178FC0C2A6A63F20006D5AB /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		3178FC0E2A6A66BF0006D5AB /* DraftPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftPadView.swift; sourceTree = "<group>"; };
+		3178FC102A6A73380006D5AB /* DraftToolPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftToolPad.swift; sourceTree = "<group>"; };
+		3178FC132A6A7CB80006D5AB /* AnswerAndDraftPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerAndDraftPadView.swift; sourceTree = "<group>"; };
 		31B982DF2A5FB41A003DC8E3 /* CalculationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B982E22A5FB41A003DC8E3 /* CalculationProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationProjectApp.swift; sourceTree = "<group>"; };
 		31B982E42A5FB41A003DC8E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3178FC122A6A734A0006D5AB /* DraftPad */ = {
+			isa = PBXGroup;
+			children = (
+				3178FC0E2A6A66BF0006D5AB /* DraftPadView.swift */,
+				3178FC102A6A73380006D5AB /* DraftToolPad.swift */,
+			);
+			path = DraftPad;
+			sourceTree = "<group>";
+		};
 		31B982D62A5FB41A003DC8E3 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +112,9 @@
 			children = (
 				31B982E22A5FB41A003DC8E3 /* CalculationProjectApp.swift */,
 				31B982E42A5FB41A003DC8E3 /* ContentView.swift */,
+				3178FC132A6A7CB80006D5AB /* AnswerAndDraftPadView.swift */,
+				3178FC122A6A734A0006D5AB /* DraftPad */,
+				3178FC0C2A6A63F20006D5AB /* BackgroundView.swift */,
 				31D33F1E2A651AC900B3CBBD /* UseSettingPad */,
 				31D33F2B2A66B80800B3CBBD /* CardStackAndInputPad */,
 				31DC63402A67D09500164B0F /* ControlAndDisplayPad */,
@@ -276,7 +296,9 @@
 				31D33F2F2A678B9100B3CBBD /* AnotherCustomGrid.swift in Sources */,
 				31EF71282A600586000BFE5E /* ToggleStackSettingView.swift in Sources */,
 				31B982E52A5FB41A003DC8E3 /* ContentView.swift in Sources */,
+				3178FC142A6A7CB80006D5AB /* AnswerAndDraftPadView.swift in Sources */,
 				31DC633D2A67CB5400164B0F /* ToolButtonView.swift in Sources */,
+				3178FC112A6A73380006D5AB /* DraftToolPad.swift in Sources */,
 				31EF712C2A628886000BFE5E /* TwoOpdScopeView.swift in Sources */,
 				31DC633F2A67D07B00164B0F /* ControlAndDisplayPadView.swift in Sources */,
 				31D33F1B2A64200E00B3CBBD /* TouchDownRecognizer.swift in Sources */,
@@ -284,12 +306,14 @@
 				31B982F32A5FC934003DC8E3 /* Question.swift in Sources */,
 				31D33F312A67BEC100B3CBBD /* SignalView.swift in Sources */,
 				31D33F2A2A66B72100B3CBBD /* CardStackAndInputPadView.swift in Sources */,
+				3178FC0F2A6A66BF0006D5AB /* DraftPadView.swift in Sources */,
 				31D33F2D2A67872700B3CBBD /* CustomGrid.swift in Sources */,
 				31DC633A2A67C46900164B0F /* SignalDisplayPad.swift in Sources */,
 				31D33F232A652B5100B3CBBD /* InputPadView.swift in Sources */,
 				31EF712A2A60221F000BFE5E /* UnitOperandScopeView.swift in Sources */,
 				31B982E32A5FB41A003DC8E3 /* CalculationProjectApp.swift in Sources */,
 				31D33F212A651B7300B3CBBD /* InputButtonView.swift in Sources */,
+				3178FC0D2A6A63F20006D5AB /* BackgroundView.swift in Sources */,
 				31D33F252A66852A00B3CBBD /* InputRecord.swift in Sources */,
 				31EF71242A5FD5A8000BFE5E /* StackOfCardsView.swift in Sources */,
 				31EF71262A5FFDE8000BFE5E /* UserSettingPadView.swift in Sources */,

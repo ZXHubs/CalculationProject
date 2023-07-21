@@ -11,7 +11,7 @@ struct AllOpdScopeView: View {
     @EnvironmentObject var questionLib: QuestionLib
 //    横向还是纵向布局
     var isHstack: Bool {
-        sizeClass == .compact
+        sizeClass == .regular
     }
 //    属性包装器，将读取的属性值keypath
 //    可以option查看sizeClass是UserInterfaceSizeClass类型，枚举，get类型，有compact和regular，紧凑和充足的空间
